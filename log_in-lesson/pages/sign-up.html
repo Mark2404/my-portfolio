@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/sign-up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>sign-up</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="#">
+            <div class="title">
+                <h2>Sign-up</h2>
+                <p>Sign-up start use up birbalo</p>
+
+            </div>
+            <div class="name-sec">
+                <div class="input">
+                    <label for="First-name">First Name</label>
+                    <input type="text" name="" id="First-name">
+
+                </div>
+                <div class="input">
+                    <label for="Last-name">Last name</label>
+                    <input type="text" name="" id="Last-name">
+
+                </div>
+            </div>
+            <div class="user-data-sec">
+                <div class="input">
+                    <label for="User-name">User name</label>
+                    <input type="text" name="" id="User-name">
+
+                </div>
+                <div class="input">
+                    <label for="Email-adress">Email adress</label>
+                    <input type="text" name="" id="Email-adress">
+
+                </div>
+                <div class="input">
+                    <label for="Password">Password</label>
+                    <input type="text" name="" id="Password">
+
+                </div>
+                <div class="input">
+                    <label for="Password"> Type Password again</label>
+                    <input type="text" name="" id="Password">
+
+
+
+                </div>
+                <script>
+                    const eye = document.getElementById("eye");
+                    const password = document.getElementById("password");
+                    eye.addEventListener("click", () => {
+                        if (password.type === "password") {
+                            password.type = "text";
+                            eye.classList.remove("fa-eye-slash");
+                            eye.classList.add("fa-eye");
+                        } else {
+                            password.type = "password";
+                            eye.classList.remove("fa-eye");
+                            eye.classList.add("fa-eye-slash");
+                        }
+                    });
+
+                </script>
+
+
+            </div>
+            <button type="submit" class="submit">Sign up</button>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

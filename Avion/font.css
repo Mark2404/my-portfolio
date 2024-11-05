@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Clash';
+    src: url(/assets/fonts/ClashDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: 'satoshi';
+    src: url(./assets/fonts/Satoshi-Regular.otf);
+}

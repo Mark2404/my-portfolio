@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Thumbnail</title>
+</head>
+
+<body>
+    <div class="container mb-container">
+        <img src="./imgs/illustration.png" alt="">
+        <form class="mb-form">
+            <div class="logo-sec">
+                <div class="logo">
+                    <img src="./imgs/Group 1686550876.svg" alt="">
+
+                    <h1>Login to your Account</h1>
+                    <p>See what is going on with your business</p>
+                    <button>Continue with Google</button>
+                    <div>
+
+                        <a href="#" class="cizu">------------- or Sign in with Email -------------</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="input-sec">
+                <div class="input">
+
+                    <label for="email">Email</label>
+
+                    <input type="text" placeholder="@Email" id="email" required>
+                </div>
+                <div class="input">
+
+                    <label for="password">password</label>
+                    <input type="password" placeholder="@Email" id="password" required class="mb-password-int">
+                    <i class="fa-solid fa-eye"></i>
+                    <i id="eye" class="fa-solid  fa-eye-slash"></i>
+                </div>
+                <script>
+                    const eye = document.getElementById("eye");
+                    const password = document.getElementById("password");
+                    eye.addEventListener("click", () => {
+                        if (password.type === "password") {
+                            password.type = "text";
+                            eye.classList.remove("fa-eye-slash");
+                            eye.classList.add("fa-eye");
+                        } else {
+                            password.type = "password";
+                            eye.classList.remove("fa-eye");
+                            eye.classList.add("fa-eye-slash");
+                        }
+                    });
+
+                </script>
+
+
+
+            </div>
+            <div class="remember">
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for=" checkbox">Remember me</label>
+
+                </div>
+                <a href="./pages/sign-up.html" class="mb-password">Forgot Password?</a>
+            </div>
+
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

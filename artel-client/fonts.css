@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Styrene A Web';
+    src: url(./assets/fonts/StyreneAWeb-Thin.ttf);
+    font-weight: 100;
+
+}
+
+@font-face {
+    font-family: 'Styrene A Web';
+    src: url(./assets/fonts/StyreneAWeb-Light.ttf);
+    font-weight: 300;
+
+}
+
+@font-face {
+    font-family: 'Styrene A Web';
+    src: url(./assets/fonts/StyreneAWeb-Regular.ttf);
+    font-weight: 400;
+
+}
+
+@font-face {
+    font-family: 'Styrene A Web';
+    src: url(./assets/fonts/StyreneAWeb-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: 'Styrene A Web';
+    src: url(./assets/fonts/StyreneAWeb-Bold.ttf);
+    font-weight: 700;
+}
